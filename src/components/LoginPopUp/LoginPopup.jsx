@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./loginpopup.css";
 import { assets } from "../../assets/assets";
 
@@ -10,6 +10,7 @@ const LoginPopup = () => {
         <div className="login-popup-title">
           <h2>{currState}</h2>
           <img
+            // eslint-disable-next-line no-undef
             onClick={() => setShowLogin(false)}
             src={assets.cross_icon}
             alt=""
@@ -29,13 +30,15 @@ const LoginPopup = () => {
           <input type="checkbox" required />
           <p> By continuing ,i agree to the terms of use & privacy policy.</p>
         </div>
-        {currState==="Login" ? (
+        {currState === "Login" ? (
           <p>
-            Create a new account?<span onClick={()=>setCurrState("Sign Up")}>click here</span>
+            Create a new account?
+            <span onClick={() => setCurrState("Sign Up")}>click here</span>
           </p>
         ) : (
           <p>
-            All ready have an account?<span onClick={()=>setCurrState("Login")}>login here</span>
+            All ready have an account?
+            <span onClick={() => setCurrState("Login")}>login here</span>
           </p>
         )}
       </form>
