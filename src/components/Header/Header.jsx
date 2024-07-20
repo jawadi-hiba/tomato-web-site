@@ -1,7 +1,7 @@
 import "./header.css";
 function Header() {
   return (
-    <div className="header" id="home">
+    <div className="header">
       <div className="header-contents">
         <h2>Oreder your favrourite food here</h2>
         <p>
@@ -9,9 +9,11 @@ function Header() {
           exclusive deals and lightning-fast delivery right to your doorstep.
           Indulge in a world of culinary delights with just a few taps on your
           phone, and enjoy special promotions like discounts on your first order
-          and loyalty rewards for repeat customers.{" "}
+          and loyalty rewards for repeat customers.
         </p>
-        <button>View menu </button>
+        <button>
+          <a href="#explore-menu">View menu</a>
+        </button>
       </div>
     </div>
   );

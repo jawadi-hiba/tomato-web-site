@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./loginpopup.css";
 import { assets } from "../../assets/assets";
 
-const LoginPopup = () => {
+const LoginPopup = ({ setShowLogin }) => {
   const [currState, setCurrState] = useState("Sign Up");
   return (
     <div className="login-popup">
@@ -10,7 +10,6 @@ const LoginPopup = () => {
         <div className="login-popup-title">
           <h2>{currState}</h2>
           <img
-            // eslint-disable-next-line no-undef
             onClick={() => setShowLogin(false)}
             src={assets.cross_icon}
             alt=""

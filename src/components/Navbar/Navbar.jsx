@@ -1,21 +1,27 @@
 import { useState } from "react";
 import "./navbar.css";
 import { assets } from "../../assets/assets";
-import { Link } from "react-router-dom";
 
 const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("home");
+
+  // function to hundle click in home page
+
+  const handleClickHome = () => {
+    setMenu("Home");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <div className="navbar">
       <img src={assets.logo} alt="logo" className="logo" />
       <ul className="navbar-menu">
-        <Link
-          to="/"
-          onClick={() => setMenu("home")}
-          className={menu === "home" ? "active" : ""}
+        <a
+          href="#header-page"
+          onClick={handleClickHome}
+          className={menu === "Home" ? "active" : ""}
         >
           Home
-        </Link>
+        </a>
 
         <a
           href="#explore-menu"
