@@ -6,7 +6,7 @@ import FoodDisplay from "../../components/FoodDisplay/FoodDisplay.jsx";
 const Home = () => {
   const [category, setCategory] = useState("All");
   return (
-    <div id="header-page">
+    <div>
       <Header />
       <ExploreMenu category={category} setCategory={setCategory} />
       <FoodDisplay category={category} />

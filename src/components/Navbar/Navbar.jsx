@@ -12,7 +12,7 @@ const Navbar = ({ setShowLogin }) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
-    <div className="navbar">
+    <div className="navbar" id="header-page">
       <img src={assets.logo} alt="logo" className="logo" />
       <ul className="navbar-menu">
         <a

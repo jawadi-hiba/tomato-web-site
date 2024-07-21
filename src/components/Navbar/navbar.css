@@ -73,23 +73,31 @@
     width: 22px;
   }
   .navbar-right button {
-    padding: auto;
+    padding: 8px;
+    width: 80px;
+    font-size: 15px;
+    font-weight: 500;
   }
 }
 
 @media only screen and (max-width: 900px) {
-  .navbar-logo {
-    width: 120px;
+  .logo {
+    width: 120px !important;
   }
   .navbar-menu {
     gap: 10px;
+    font-size: 15px;
+    font-weight: 500;
   }
   .navbar-right img {
     width: 20px;
   }
   .navbar-right button {
-    padding: 7px 20px;
+    padding: 8px;
     font-size: 15px;
+    font-weight: 500;
+
+    width: 80px;
   }
 }
 
@@ -100,6 +108,7 @@
   .navbar-right button {
     padding: 8px;
     font-size: 15px;
+    font-weight: 500;
     width: 80px;
   }
 }
@@ -110,8 +119,7 @@
   }
   .navbar-right button {
     padding: 8px;
-    font-size: 13px;
+    font-size: 15px;
     width: 80px;
-    margin-right: 20px;
   }
 }
