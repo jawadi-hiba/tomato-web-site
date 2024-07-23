@@ -76,7 +76,7 @@
     padding: 8px;
     width: 80px;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
   }
 }
 
@@ -87,7 +87,7 @@
   .navbar-menu {
     gap: 10px;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
   }
   .navbar-right img {
     width: 20px;
@@ -95,7 +95,7 @@
   .navbar-right button {
     padding: 8px;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
 
     width: 80px;
   }
@@ -108,7 +108,7 @@
   .navbar-right button {
     padding: 8px;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
     width: 80px;
   }
 }
@@ -121,5 +121,6 @@
     padding: 8px;
     font-size: 15px;
     width: 80px;
+    /* margin-right: 20px; */
   }
 }
